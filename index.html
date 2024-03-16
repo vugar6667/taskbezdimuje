@@ -1,128 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--fontawosme link start-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--fontawosme link start-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--fontawosme link end-->
+  <link rel="stylesheet" href="/css/style.css" />
 
-    <!--fontawosme link end-->
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-     <!--NAVBAR SECTION START-->  
+
+  <!--NAVBAR SECTION START-->
   <nav class="navbar">
     <a href="/" class="navbar__logo">Missouri</a>
     <div class="navbar__bars">
-        <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars"></i>
     </div>
+
     <div class="navbar__menu">
-        <a href="/" class="navbar__menu--links">About Us</a>
-        <a href="/" class="navbar__menu--links">Practises</a>
-        <a href="/" class="navbar__menu--links">Lawyers</a>
-        <a href="/" class="navbar__menu--links">Contacts</a>
-        
+      <a href="/" class="navbar__menu--links">About Us</a>
+      <a href="/" class="navbar__menu--links">Practises</a>
+      <a href="/" class="navbar__menu--links">Lawyers</a>
+      <a href="/" class="navbar__menu--links">Contacts</a>
     </div>
   </nav>
 
   <!--HERO SECTION-->
   <div class="hero">
     <div class="hero__container">
-        <div class="hero__container--left">
-            <h1>
-                Family law specialist with a no win, no fee guarantee.</h1>
-              <button class="hero__container--btn"><a href="#">Schedule a meeting</a></button>  
-        </div> 
+      <div class="hero__container--left">
+        <h1 class="hero__container--left-head">Family law specialist with a no win, no fee guarantee.</h1>
+        <button class="hero__container--btn">
+          <a class="hero__container--btn-link" href="#">Schedule a meeting</a>
+        </button>
+      </div>
     </div>
   </div>
-
 
   <!--PHOTO SECTION START-->
 
   <section class="image-section">
-    <img class="image-section__image" src="/ASSETS/WOMANTHINK.avif" alt="Your Image">
+    <img class="image-section__image" src="/ASSETS/WOMANTHINK.avif" alt="Your Image" />
   </section>
-   <!--PHOTO SECTION end-->
+  <!--PHOTO SECTION end-->
 
-   <!--writin 01 02 03 SECTION START-->
+  <!--writin 01 02 03 SECTION START-->
 
-   <div class="section-container">
+  <div class="section-container">
     <section class="section">
       <div class="card">
         <h4 class="title">01</h4>
         <h5 class="subtitle">Years of experience</h5>
-        <p>Missouri family law was one of the first established law firms to specialize in domestic disputes and upholding family law in New York.</p>
+        <p>
+          Missouri family law was one of the first established law firms to
+          specialize in domestic disputes and upholding family law in New
+          York.
+        </p>
       </div>
     </section>
     <section class="section">
       <div class="card">
         <h4 class="title">02</h4>
         <h5 class="subtitle">Personal and practical</h5>
-        <p>We believe that no two cases are the same. We consider all of our clients’ disputes from an individual perspective and aim to offer practical advice.</p>
+        <p>
+          We believe that no two cases are the same. We consider all of our
+          clients’ disputes from an individual perspective and aim to offer
+          practical advice.
+        </p>
       </div>
     </section>
     <section class="section">
       <div class="card">
         <h4 class="title">03</h4>
         <h5 class="subtitle">Advice and representation</h5>
-        <p>We offer a complete range of legal services under one roof: our team delivers everything from advisory counsel to full court representation.</p>
+        <p>
+          We offer a complete range of legal services under one roof: our team
+          delivers everything from advisory counsel to full court
+          representation.
+        </p>
       </div>
     </section>
   </div>
 
   <!--writing SECTION START-->
-   
+
   <section class="container">
     <div class="container__left">
-      <h3 class="container__title">We offer a no win, no fee guarantee</h3>
-      <p class="container__description">Missouri family law is committed to representing and protecting the more vulnerable neighborhoods across the state. We believe that nobody should have to stay in a violent household, without a way out.</p>
-      <p class="container__paragraph">We offer a no win, no fee guarantee for clients who are eligible to participate in our vulnerability scheme. This is our way of carrying out our social responsibility towards our community. A specialist family law representative can make a real difference in your life.</p>
+      <h3 class="container__left title">We offer a no win, no fee guarantee</h3>
+      <p class="container__description">
+        Missouri family law is committed to representing and protecting the
+        more vulnerable neighborhoods across the state. We believe that nobody
+        should have to stay in a violent household, without a way out.
+      </p>
+      <p class="container__paragraph">
+        We offer a no win, no fee guarantee for clients who are eligible to
+        participate in our vulnerability scheme. This is our way of carrying
+        out our social responsibility towards our community. A specialist
+        family law representative can make a real difference in your life.
+      </p>
       <button class="container__button">Learn more</button>
     </div>
     <div class="container__right">
       <h5 class="container__subtitle">Practice areas</h5>
-      <p class="container__subdescription">Domestic Violence
-        Divorce and Separation
-        Child Custody 
-        Spousal and Child Support
-        State Property Law
-        Immigration Family Law</p>
+      <p class="container__subdescription">
+        Domestic Violence Divorce and Separation Child Custody Spousal and
+        Child Support State Property Law Immigration Family Law
+      </p>
     </div>
   </section>
 
-
   <section class="container2">
     <div class="container2__content">
-        <h2 class="container2__title">
-          We are here to help</h2>
-        <p class="container2__description">Talk to our family law attorneys today. We tailor our services around <br> your legal needs so that we can reach the desired outcome together.</p>
-        <button class="container2__button">Schedule a Meeting</button>
+      <h2 class="container2__title">We are here to help</h2>
+      <p class="container2__description">
+        Talk to our family law attorneys today. We tailor our services around
+        <br />
+        your legal needs so that we can reach the desired outcome together.
+      </p>
+      <button class="container2__button">Schedule a Meeting</button>
     </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="footer__left">
+  <footer class="footer">
+    <div class="footer__left">
       <h2 class="footer__title1">Missouri</h2>
-      <p class="footer__description">info@missouri.com <br>+6567-7655-8766
-       </p>
-  </div>
-  <p class="footer__right">9040 Laurel Street <br>
-    New York, NY 10032</p>
-</footer>
-
-
+      <p class="footer__description">
+        info@missouri.com <br />+6567-7655-8766
+      </p>
+    </div>
+    <p class="footer__right">
+      9040 Laurel Street <br />
+      New York, NY 10032
+    </p>
+  </footer>
 </body>
+
 </html>

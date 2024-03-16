@@ -24,7 +24,7 @@
 .navbar__bars {
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .navbar__bars {
     color: black;
     opacity: 1;
@@ -39,7 +39,7 @@
   text-align: center;
   margin-right: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .navbar__menu {
     display: none;
   }
@@ -62,8 +62,19 @@
   padding: 0;
 }
 
+.navbar {
+  padding: 0 5%;
+}
+.navbar__logo {
+  margin: 0;
+}
+.navbar__menu {
+  margin: 0;
+}
+
 .hero {
   background-color: #D9DADB;
+  padding: 10px 5%;
 }
 .hero__container {
   height: 90vh;
@@ -75,10 +86,8 @@
   z-index: 1;
   width: 100%;
   max-width: 1200px;
-  padding-right: 24px;
-  padding-left: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .hero__container {
     grid-template-columns: 1fr;
     height: 100%;
@@ -88,13 +97,9 @@
   width: 100%;
   line-height: 1.2;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .hero__container--left {
     padding: 5rem 0;
-  }
-}
-@media screen and (max-width: 280px) {
-  .hero__container--left {
     line-height: 1.5;
   }
 }
@@ -160,18 +165,24 @@
 }
 
 .section-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   background-color: #202b40;
   height: 100%;
   align-items: center;
+  padding: 0 5%;
+}
+@media screen and (max-width: 991px) {
+  .section-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .section {
   width: 300px;
   height: 300px;
-  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,24 +225,44 @@ p {
 }
 
 .container {
+  padding: 0 5%;
   display: flex;
   height: 100vh;
   background-color: #D9DADB;
 }
+@media screen and (max-width: 991px) {
+  .container {
+    justify-content: center;
+  }
+}
 .container__left {
+  margin: 0 auto;
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
 }
+@media screen and (max-width: 991px) {
+  .container__left {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 .container__left h3 {
+  width: 100%;
+  padding: 0;
   margin-bottom: 10px;
   font-family: "Marcellus", serif;
   font-weight: 400;
   font-size: 48px;
   color: #202b40;
   max-width: 700px;
+}
+@media screen and (max-width: 991px) {
+  .container__left h3 {
+    font-size: 32px;
+  }
 }
 .container__left p {
   margin: 0;
@@ -242,12 +273,18 @@ p {
   color: #202b40;
 }
 .container__right {
+  margin: 0 auto;
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+@media screen and (max-width: 991px) {
+  .container__right {
+    max-width: 300px;
+  }
 }
 .container__right h5 {
   margin-bottom: 10px;
@@ -263,6 +300,11 @@ p {
   font-family: "Lato", sans-serif;
   color: #202b40;
   max-width: 200px;
+}
+@media screen and (max-width: 991px) {
+  .container__right p {
+    margin: 0;
+  }
 }
 .container__title, .container__subtitle {
   margin: 0;
@@ -298,12 +340,18 @@ p {
   justify-content: flex-start;
   align-items: center;
   height: 60vh;
-  padding: 20px 80px;
+  padding: 20px 5%;
   background-color: #202B40;
 }
 .container2__content {
   text-align: left;
   max-width: 600px;
+}
+@media screen and (max-width: 991px) {
+  .container2__content {
+    margin: 0 auto;
+    max-width: 300px;
+  }
 }
 .container2__content h2 {
   margin: 0;
@@ -327,14 +375,27 @@ p {
 .footer {
   height: 30vh;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 3fr;
   align-items: center;
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 20px 5%;
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
 }
 .footer__left {
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  display: block;
+  text-align: left;
+}
+@media screen and (max-width: 991px) {
+  .footer__left {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 }
 .footer__title1 {
   margin: 0;
@@ -347,6 +408,13 @@ p {
 .footer__right {
   margin: 0;
   color: black;
+}
+@media screen and (max-width: 991px) {
+  .footer__right {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+  }
 }
 @media (max-width: 768px) {
   .footer {
