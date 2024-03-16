@@ -1,0 +1,64 @@
+@import "colors";
+@import "media-queries";
+
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem ;
+    z-index: 10;
+    position: relative;
+    flex-wrap: nowrap;
+    background-color:#fff ;
+
+    &__logo{
+        color:#202B40;
+        cursor: pointer;
+        text-decoration: none;
+        font-size:2rem ;
+        margin-left: 24px;
+        @extend %align-center;
+        font-family: 'Montserrat',sans-serif ;
+    }
+    &__bars{
+        opacity: 0;
+
+        @include tablet {
+            color: black;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+    &__menu{
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        @include tablet {
+            display: none;
+        }
+        &--links{
+            color: black;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+            font-family: 'Lato',sans-serif ;
+
+            &:hover {
+                color: red;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
