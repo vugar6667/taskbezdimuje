@@ -24,7 +24,7 @@
 .navbar__bars {
   opacity: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .navbar__bars {
     color: black;
     opacity: 1;
@@ -39,7 +39,7 @@
   text-align: center;
   margin-right: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .navbar__menu {
     display: none;
   }
